@@ -93,4 +93,102 @@ $images = [
 
 ];
 
+$hotels = [
+
+    'tree' => [
+        
+        'name' => 'Valakampiai1',
+        'title' => 'tekstas tekstas tekstas',
+        'beds' => 3,
+        'people' => 6,
+        'region' => 'Vilnius',
+        'rating' => 1,
+    ],
+    'island' => [
+        
+        'name' => 'Valakampiai2',
+        'title' => 'tekstas tekstas tekstas',
+        'beds' => 5,
+        'people' => 10,
+        'region' => 'Kaunas',
+        'rating' => 6,
+    ],
+    'autumn' => [
+        
+        'name' => 'Valakampiai3',
+        'title' => 'tekstas tekstas tekstas',
+        'beds' => 15,
+        'people' => 30,
+        'region' => 'Palanga',
+        'rating' => 10,
+    ],
+    'mauntain' => [
+        
+        'name' => 'Valakampiai4',
+        'title' => 'tekstas tekstas tekstas',
+        'beds' => 1,
+        'people' => 2,
+        'region' => 'Neringa',
+        'rating' => 10,
+    ],
+    'sunrise' => [
+        
+        'name' => 'Valakampiai5',
+        'title' => 'tekstas tekstas tekstas',
+        'beds' => 20,
+        'people' => 40,
+        'region' => 'Moletai',
+        'rating' => 7,
+    ],
+    'birds' =>[
+        
+        'name' => 'Valakampiai6',
+        'title' => 'tekstas tekstas tekstas',
+        'beds' => 15,
+        'people' => 30,
+        'region' => 'Panevezys',
+        'rating' => 8,
+    ],
+    'motorcycle' =>[
+        
+        'name' => 'Valakampiai7',
+        'title' => 'tekstas tekstas tekstas',
+        'beds' => 20,
+        'people' => 40,
+        'region' => 'Klaipeda',
+        'rating' => 9,
+    ],
+
+];
+
+
+$form  = [
+    'inputs' => [
+        'user_name' => [
+            'type' => 'text',
+            'placeholder' => 'User name:',
+            'name' => 'user_name',
+        ],
+        'user_email' => [
+            'type' => 'email',
+            'placeholder' => 'User email:',
+            'name' => 'user_email',
+        ],
+        'textarea' => [
+            'placeholder' => 'Write your text:',
+            'name' => 'textarea',
+        ],
+    ],
+    'buttons' => [
+        'send' => [
+            'type' => 'submit',
+            'value' => 'Siusti',
+        ]
+    ],
+
+
+];
+
+
+
 

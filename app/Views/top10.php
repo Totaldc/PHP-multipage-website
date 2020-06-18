@@ -1,6 +1,7 @@
 <?php
 include_once '../Models/functions.php';
 include_once '../php/array.php';
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -18,7 +19,7 @@ include_once '../php/array.php';
     <?php menu($menu); ?>
 </header>
 <section id="home">
-    <?php display_text($text_columns); ?>
+    <?php top_10($hotels); ?>
 </section> 
 <script src="../../assets/js/jQuery.js"></script>
 <script src="../../assets/js/bootstrap.bundle.js"></script>
