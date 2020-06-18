@@ -109,6 +109,14 @@ function top_10($hotels)
     $keys = array_column($hotels, 'beds');
     array_multisort($keys, SORT_DESC, $hotels);
     var_dump($hotels);
+    $output = array_slice($hotels, 0, 3);
+    foreach($output as $value){
+        foreach($value as $item){
+            print $item . "<br>";
+        }
+    }
+
+    
 }
     
 
