@@ -200,12 +200,10 @@ function search($array)
   
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         foreach ($array['homestead'] as $homestead) {
-            $_POST['region'] === $homestead['region'] ? $newHomesteadArray[] = $homestead : '';
-            $_POST['rating'] == $homestead['rating'] ? $newHomesteadArray[] = $homestead : '';
-            $_POST['beds'] == $homestead['beds'] ? $newHomesteadArray[] = $homestead : '';
-            $_POST['name'] == $homestead['name'] ? $newHomesteadArray[] = $homestead : '';
-            $_POST['people'] == $homestead['people'] ? $newHomesteadArray[] = $homestead : '';
-            $_POST['title'] == $homestead['title'] ? $newHomesteadArray[] = $homestead : '';
+            unset($homestead['id']);
+            foreach ($homestead as $key => $value) {
+                $_POST[$key] == $homestead[$key] ? $newHomesteadArray[] = $homestead : '';
+            }
         }
         print '<table align="left" border="1" cellpadding="3" cellspacing="0">';
         foreach ($newHomesteadArray as $homestead) {
