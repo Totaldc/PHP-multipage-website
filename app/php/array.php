@@ -189,6 +189,77 @@ $form  = [
 
 ];
 
+$hotels = [
+    'homestead' => [
+
+    [
+        'id' => 1,
+        'name' => 'Valakampiai1',
+        'title' => 'tekstas tekstas tekstas',
+        'beds' => 3,
+        'people' => 6,
+        'region' => 'Vilnius',
+        'rating' => 1,
+    ],
+     [
+        'id' => 2,
+        'name' => 'Valakampiai2',
+        'title' => 'tekstas tekstas tekstas',
+        'beds' => 5,
+        'people' => 10,
+        'region' => 'Kaunas',
+        'rating' => 6,
+    ],
+   [
+    'id' => 3,
+        'name' => 'Valakampiai3',
+        'title' => 'tekstas tekstas tekstas',
+        'beds' => 15,
+        'people' => 30,
+        'region' => 'Palanga',
+        'rating' => 10,
+    ],
+     [
+        'id' => 4,
+        'name' => 'Valakampiai4',
+        'title' => 'tekstas tekstas tekstas',
+        'beds' => 1,
+        'people' => 2,
+        'region' => 'Neringa',
+        'rating' => 10,
+    ],
+     [
+        'id' => 5,
+        'name' => 'Valakampiai5',
+        'title' => 'tekstas tekstas tekstas',
+        'beds' => 20,
+        'people' => 40,
+        'region' => 'Moletai',
+        'rating' => 7,
+    ],
+    [
+        'id' => 6,
+        'name' => 'Valakampiai6',
+        'title' => 'tekstas tekstas tekstas',
+        'beds' => 15,
+        'people' => 30,
+        'region' => 'Panevezys',
+        'rating' => 8,
+    ],
+    [
+        'id' => 7,
+        'name' => 'Valakampiai7',
+        'title' => 'tekstas tekstas tekstas',
+        'beds' => 20,
+        'people' => 40,
+        'region' => 'Klaipeda',
+        'rating' => 9,
+    ],
+
+],
+
+];
+
 
 
 

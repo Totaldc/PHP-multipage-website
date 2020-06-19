@@ -172,11 +172,48 @@ function get_form($array, $input_name1, $input_name2, $input_name3 = false)
   print'  </div>';
   print'  </div>';
   print'  </div>';
-    print '</form>';
-    print '</div>';
+  print '</form>';
+  print '</div>';
 
     var_dump($_POST);
 }
+
+//SEARCHAS
+function search($array)
+{
+    print'<form method="post">';
+    unset($array['homestead'][0]['id']);
+    foreach ($array['homestead'][0] as $key => $value) {
+        $newarray = array_column($array['homestead'], $key);
+        array_unshift($newarray, '---');
+        $newarray = array_unique($newarray);
+        print '<select name="' . $key . '">';
+        foreach ($newarray as $homestead) {
+            print '<option value="' . $homestead . '">' . $homestead . '</option>';
+        }
+        print '</select>';
+    }
+    print '<input type="submit" value="SEARCH">';
+    print '</form>';
+
+  
+  
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        foreach ($array['homestead'] as $homestead) {
+            $_POST['region'] === $homestead['region'] ? $newHomesteadArray[] = $homestead : '';
+            $_POST['rating'] == $homestead['rating'] ? $newHomesteadArray[] = $homestead : '';
+            $_POST['beds'] == $homestead['beds'] ? $newHomesteadArray[] = $homestead : '';
+            $_POST['name'] == $homestead['name'] ? $newHomesteadArray[] = $homestead : '';
+            $_POST['people'] == $homestead['people'] ? $newHomesteadArray[] = $homestead : '';
+            $_POST['title'] == $homestead['title'] ? $newHomesteadArray[] = $homestead : '';
+        }
+        print '<table align="left" border="1" cellpadding="3" cellspacing="0">';
+        foreach ($newHomesteadArray as $homestead) {
+            print '<tr><td>' . $homestead['name'] . '</td><td>' . '' . '</td><td>' . $homestead['people'] . '</td><td>' . $homestead['rating'] . '</td><td>' . $homestead['region'] . '</td></tr>';
+        }
+        print '</table>';
+    }
+}  
 
 
 
